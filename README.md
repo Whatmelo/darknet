@@ -1,12 +1,5 @@
 # Yolo v4, v3 and v2 for Windows and Linux
 
-## (neural networks for object detection)
-
-* Paper **YOLOv7**: https://arxiv.org/abs/2207.02696
-
-* source code YOLOv7 - Pytorch (use to reproduce results): https://github.com/WongKinYiu/yolov7
-
-----
 
 * Paper **YOLOv4**: https://arxiv.org/abs/2004.10934
 
@@ -14,141 +7,10 @@
 
 ----
 
-* Paper **Scaled-YOLOv4 (CVPR 2021)**: https://openaccess.thecvf.com/content/CVPR2021/html/Wang_Scaled-YOLOv4_Scaling_Cross_Stage_Partial_Network_CVPR_2021_paper.html
-
 * source code Scaled-YOLOv4 - Pytorch (use to reproduce results): https://github.com/WongKinYiu/ScaledYOLOv4
 
 ----
 
-### YOLOv7: Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors
-
-* **Paper**: https://arxiv.org/abs/2207.02696
-
-* **source code - Pytorch (use to reproduce results):** https://github.com/WongKinYiu/yolov7
-
-
-YOLOv7 is more accurate and faster than YOLOv5 by **120%** FPS, than YOLOX by **180%** FPS, than Dual-Swin-T by **1200%** FPS, than ConvNext by **550%** FPS, than SWIN-L by **500%** FPS, than PPYOLOE-X by **150%** FPS.
-
-YOLOv7 surpasses all known object detectors in both speed and accuracy in the range from 5 FPS to 160 FPS and has the highest accuracy 56.8% AP among all known real-time object detectors with 30 FPS or higher on GPU V100, batch=1. 
-
-* YOLOv7-e6 (55.9% AP, 56 FPS V100 b=1) by `+500%` FPS faster than SWIN-L C-M-RCNN (53.9% AP, 9.2 FPS A100 b=1)
-* YOLOv7-e6 (55.9% AP, 56 FPS V100 b=1) by `+550%` FPS faster than ConvNeXt-XL C-M-RCNN (55.2% AP, 8.6 FPS A100 b=1)
-* YOLOv7-w6 (54.6% AP, 84 FPS V100 b=1) by `+120%` FPS faster than YOLOv5-X6-r6.1 (55.0% AP, 38 FPS V100 b=1)
-* YOLOv7-w6 (54.6% AP, 84 FPS V100 b=1) by `+1200%` FPS faster than Dual-Swin-T C-M-RCNN (53.6% AP, 6.5 FPS V100 b=1)
-* YOLOv7x (52.9% AP, 114 FPS V100 b=1) by `+150%` FPS faster than PPYOLOE-X (51.9% AP, 45 FPS V100 b=1)
-* YOLOv7 (51.2% AP, 161 FPS V100 b=1) by `+180%` FPS faster than YOLOX-X (51.1% AP, 58 FPS V100 b=1)
-
-
-----
-
-![more5](https://user-images.githubusercontent.com/4096485/179425274-f55a36d4-8450-4471-816b-8c105841effd.jpg)
-
-----
-
-![image](https://user-images.githubusercontent.com/4096485/177675030-a929ee00-0eba-4d93-95c2-225231d0fd61.png)
-
-
-----
-
-More details in articles on medium:
-
-- [Scaled_YOLOv4](https://alexeyab84.medium.com/scaled-yolo-v4-is-the-best-neural-network-for-object-detection-on-ms-coco-dataset-39dfa22fa982?source=friends_link&sk=c8553bfed861b1a7932f739d26f487c8)
-- [YOLOv4](https://medium.com/@alexeyab84/yolov4-the-most-accurate-real-time-neural-network-on-ms-coco-dataset-73adfd3602fe?source=friends_link&sk=6039748846bbcf1d960c3061542591d7)
-
-Manual: https://github.com/AlexeyAB/darknet/wiki
-
-Discussion:
-
-- [Reddit](https://www.reddit.com/r/MachineLearning/comments/gydxzd/p_yolov4_the_most_accurate_realtime_neural/)
-- [Google-groups](https://groups.google.com/forum/#!forum/darknet)
-- [Discord](https://discord.gg/zSq8rtW)
-
-About Darknet framework: http://pjreddie.com/darknet/
-
-[![Darknet Continuous Integration](https://github.com/AlexeyAB/darknet/workflows/Darknet%20Continuous%20Integration/badge.svg)](https://github.com/AlexeyAB/darknet/actions?query=workflow%3A%22Darknet+Continuous+Integration%22)
-[![CircleCI](https://circleci.com/gh/AlexeyAB/darknet.svg?style=svg)](https://circleci.com/gh/AlexeyAB/darknet)
-[![Contributors](https://img.shields.io/github/contributors/AlexeyAB/Darknet.svg)](https://github.com/AlexeyAB/darknet/graphs/contributors)
-[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](https://github.com/AlexeyAB/darknet/blob/master/LICENSE)
-[![DOI](https://zenodo.org/badge/75388965.svg)](https://zenodo.org/badge/latestdoi/75388965)
-[![arxiv.org](http://img.shields.io/badge/cs.CV-arXiv%3A2004.10934-B31B1B.svg)](https://arxiv.org/abs/2004.10934)
-[![arxiv.org](http://img.shields.io/badge/cs.CV-arXiv%3A2011.08036-B31B1B.svg)](https://arxiv.org/abs/2011.08036)
-[![colab](https://user-images.githubusercontent.com/4096485/86174089-b2709f80-bb29-11ea-9faf-3d8dc668a1a5.png)](https://colab.research.google.com/drive/12QusaaRj_lUwCGDvQNfICpa7kA7_a2dE)
-[![colab](https://user-images.githubusercontent.com/4096485/86174097-b56b9000-bb29-11ea-9240-c17f6bacfc34.png)](https://colab.research.google.com/drive/1_GdoqCJWXsChrOiY8sZMr_zbr_fH-0Fg)
-
-- [YOLOv4 model zoo](https://github.com/AlexeyAB/darknet/wiki/YOLOv4-model-zoo)
-- [Requirements (and how to install dependencies)](#requirements-for-windows-linux-and-macos)
-- [Pre-trained models](#pre-trained-models)
-- [FAQ - frequently asked questions](https://github.com/AlexeyAB/darknet/wiki/FAQ---frequently-asked-questions)
-- [Explanations in issues](https://github.com/AlexeyAB/darknet/issues?q=is%3Aopen+is%3Aissue+label%3AExplanations)
-- [Yolo v4 in other frameworks (TensorRT, TensorFlow, PyTorch, OpenVINO, OpenCV-dnn, TVM,...)](#yolo-v4-in-other-frameworks)
-- [Datasets](#datasets)
-
-- [Yolo v4, v3 and v2 for Windows and Linux](#yolo-v4-v3-and-v2-for-windows-and-linux)
-  - [(neural networks for object detection)](#neural-networks-for-object-detection)
-    - [GeForce RTX 2080 Ti](#geforce-rtx-2080-ti)
-      - [Youtube video of results](#youtube-video-of-results)
-      - [How to evaluate AP of YOLOv4 on the MS COCO evaluation server](#how-to-evaluate-ap-of-yolov4-on-the-ms-coco-evaluation-server)
-      - [How to evaluate FPS of YOLOv4 on GPU](#how-to-evaluate-fps-of-yolov4-on-gpu)
-      - [Pre-trained models](#pre-trained-models)
-    - [Requirements for Windows, Linux and macOS](#requirements-for-windows-linux-and-macos)
-    - [Yolo v4 in other frameworks](#yolo-v4-in-other-frameworks)
-      - [Datasets](#datasets)
-    - [Improvements in this repository](#improvements-in-this-repository)
-      - [How to use on the command line](#how-to-use-on-the-command-line)
-        - [For using network video-camera mjpeg-stream with any Android smartphone](#for-using-network-video-camera-mjpeg-stream-with-any-android-smartphone)
-    - [How to compile on Linux/macOS (using `CMake`)](#how-to-compile-on-linuxmacos-using-cmake)
-    - [Using also PowerShell](#using-also-powershell)
-    - [How to compile on Linux (using `make`)](#how-to-compile-on-linux-using-make)
-    - [How to compile on Windows (using `CMake`)](#how-to-compile-on-windows-using-cmake)
-    - [How to compile on Windows (using `vcpkg`)](#how-to-compile-on-windows-using-vcpkg)
-  - [How to train with multi-GPU](#how-to-train-with-multi-gpu)
-  - [How to train (to detect your custom objects)](#how-to-train-to-detect-your-custom-objects)
-    - [How to train tiny-yolo (to detect your custom objects)](#how-to-train-tiny-yolo-to-detect-your-custom-objects)
-  - [When should I stop training](#when-should-i-stop-training)
-    - [Custom object detection](#custom-object-detection)
-  - [How to improve object detection](#how-to-improve-object-detection)
-  - [How to mark bounded boxes of objects and create annotation files](#how-to-mark-bounded-boxes-of-objects-and-create-annotation-files)
-  - [How to use Yolo as DLL and SO libraries](#how-to-use-yolo-as-dll-and-so-libraries)
-  - [Citation](#citation)
-
-![Darknet Logo](http://pjreddie.com/media/files/darknet-black-small.png)
-
-![scaled_yolov4](https://user-images.githubusercontent.com/4096485/112776361-281d8380-9048-11eb-8083-8728b12dcd55.png) AP50:95 - FPS (Tesla V100) Paper: https://arxiv.org/abs/2011.08036
-
-----
-
-![modern_gpus](https://user-images.githubusercontent.com/4096485/82835867-f1c62380-9ecd-11ea-9134-1598ed2abc4b.png) AP50:95 / AP50 - FPS (Tesla V100) Paper: https://arxiv.org/abs/2004.10934
-
-tkDNN-TensorRT accelerates YOLOv4 **~2x** times for batch=1 and **3x-4x** times for batch=4.
-
-- tkDNN: https://github.com/ceccocats/tkDNN
-- OpenCV: https://gist.github.com/YashasSamaga/48bdb167303e10f4d07b754888ddbdcf
-
-### GeForce RTX 2080 Ti
-
-| Network Size               | Darknet, FPS (avg) | tkDNN TensorRT FP32, FPS | tkDNN TensorRT FP16, FPS | OpenCV FP16, FPS | tkDNN TensorRT FP16 batch=4, FPS | OpenCV FP16 batch=4, FPS | tkDNN Speedup |
-|:--------------------------:|:------------------:|-------------------------:|-------------------------:|-----------------:|---------------------------------:|-------------------------:|--------------:|
-|320                         | 100                | 116                      | **202**                  | 183              | 423                              | **430**                  | **4.3x**      |
-|416                         | 82                 | 103                      | **162**                  | 159              | 284                              | **294**                  | **3.6x**      |
-|512                         | 69                 | 91                       | 134                      | **138**          | 206                              | **216**                  | **3.1x**      |
-|608                         | 53                 | 62                       | 103                      | **115**          | 150                              | **150**                  | **2.8x**      |
-|Tiny 416                    | 443                | 609                      | **790**                  | 773              | **1774**                         | 1353                     | **3.5x**      |
-|Tiny 416 CPU Core i7 7700HQ | 3.4                | -                        | -                        | 42               | -                                | 39                       | **12x**       |
-
-- Yolo v4 Full comparison: [map_fps](https://user-images.githubusercontent.com/4096485/80283279-0e303e00-871f-11ea-814c-870967d77fd1.png)
-- Yolo v4 tiny comparison: [tiny_fps](https://user-images.githubusercontent.com/4096485/85734112-6e366700-b705-11ea-95d1-fcba0de76d72.png)
-- CSPNet: [paper](https://arxiv.org/abs/1911.11929) and [map_fps](https://user-images.githubusercontent.com/4096485/71702416-6645dc00-2de0-11ea-8d65-de7d4b604021.png) comparison: https://github.com/WongKinYiu/CrossStagePartialNetworks
-- Yolo v3 on MS COCO: [Speed / Accuracy (mAP@0.5) chart](https://user-images.githubusercontent.com/4096485/52151356-e5d4a380-2683-11e9-9d7d-ac7bc192c477.jpg)
-- Yolo v3 on MS COCO (Yolo v3 vs RetinaNet) - Figure 3: https://arxiv.org/pdf/1804.02767v1.pdf
-- Yolo v2 on Pascal VOC 2007: https://hsto.org/files/a24/21e/068/a2421e0689fb43f08584de9d44c2215f.jpg
-- Yolo v2 on Pascal VOC 2012 (comp4): https://hsto.org/files/3a6/fdf/b53/3a6fdfb533f34cee9b52bdd9bb0b19d9.jpg
-
-#### Youtube video of results
-
-| [![Yolo v4](https://user-images.githubusercontent.com/4096485/101360000-1a33cf00-38ae-11eb-9e5e-b29c5fb0afbe.png)](https://youtu.be/1_SiUOYUoOI "Yolo v4") |  [![Scaled Yolo v4](https://user-images.githubusercontent.com/4096485/101359389-43a02b00-38ad-11eb-866c-f813e96bf61a.png)](https://youtu.be/YDFf-TqJOFE "Scaled Yolo v4") |
-|---|---|
-
-Others: https://www.youtube.com/user/pjreddie/videos
 
 #### How to evaluate AP of YOLOv4 on the MS COCO evaluation server
 
@@ -220,35 +82,6 @@ FPS on RTX 2070 (R) and Tesla V100 (V):
 
 - [yolov4-tiny.cfg](https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov4-tiny.cfg) - **40.2% mAP@0.5 - 371(1080Ti) FPS / 330(RTX2070) FPS** - 6.9 BFlops - 23.1 MB: [yolov4-tiny.weights](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/yolov4-tiny.weights)
 
-- [enet-coco.cfg (EfficientNetB0-Yolov3)](https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/enet-coco.cfg) - **45.5% mAP@0.5 - 55(R) FPS** - 3.7 BFlops - 18.3 MB: [enetb0-coco_final.weights](https://drive.google.com/file/d/1FlHeQjWEQVJt0ay1PVsiuuMzmtNyv36m/view)
-
-- [yolov3-openimages.cfg](https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov3-openimages.cfg) - 247 MB - 18(R) FPS - OpenImages dataset: [yolov3-openimages.weights](https://pjreddie.com/media/files/yolov3-openimages.weights)
-
-<details><summary><b>CLICK ME</b> - Yolo v3 models</summary>
-
-- [csresnext50-panet-spp-original-optimal.cfg](https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/csresnext50-panet-spp-original-optimal.cfg) - **65.4% mAP@0.5 (43.2% AP@0.5:0.95) - 32(R) FPS** - 100.5 BFlops - 217 MB: [csresnext50-panet-spp-original-optimal_final.weights](https://drive.google.com/open?id=1_NnfVgj0EDtb_WLNoXV8Mo7WKgwdYZCc)
-
-- [yolov3-spp.cfg](https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov3-spp.cfg) - **60.6% mAP@0.5 - 38(R) FPS** - 141.5 BFlops - 240 MB: [yolov3-spp.weights](https://pjreddie.com/media/files/yolov3-spp.weights)
-
-- [csresnext50-panet-spp.cfg](https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/csresnext50-panet-spp.cfg) - **60.0% mAP@0.5 - 44 FPS** - 71.3 BFlops - 217 MB: [csresnext50-panet-spp_final.weights](https://drive.google.com/file/d/1aNXdM8qVy11nqTcd2oaVB3mf7ckr258-/view?usp=sharing)
-
-- [yolov3.cfg](https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov3.cfg) - **55.3% mAP@0.5 - 66(R) FPS** - 65.9 BFlops - 236 MB: [yolov3.weights](https://pjreddie.com/media/files/yolov3.weights)
-
-- [yolov3-tiny.cfg](https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov3-tiny.cfg) - **33.1% mAP@0.5 - 345(R) FPS** - 5.6 BFlops - 33.7 MB: [yolov3-tiny.weights](https://pjreddie.com/media/files/yolov3-tiny.weights)
-
-- [yolov3-tiny-prn.cfg](https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov3-tiny-prn.cfg) - **33.1% mAP@0.5 - 370(R) FPS** - 3.5 BFlops - 18.8 MB: [yolov3-tiny-prn.weights](https://drive.google.com/file/d/18yYZWyKbo4XSDVyztmsEcF9B_6bxrhUY/view?usp=sharing)
-
-</details>
-
-<details><summary><b>CLICK ME</b> - Yolo v2 models</summary>
-
-- `yolov2.cfg` (194 MB COCO Yolo v2) - requires 4 GB GPU-RAM: https://pjreddie.com/media/files/yolov2.weights
-- `yolo-voc.cfg` (194 MB VOC Yolo v2) - requires 4 GB GPU-RAM: http://pjreddie.com/media/files/yolo-voc.weights
-- `yolov2-tiny.cfg` (43 MB COCO Yolo v2) - requires 1 GB GPU-RAM: https://pjreddie.com/media/files/yolov2-tiny.weights
-- `yolov2-tiny-voc.cfg` (60 MB VOC Yolo v2) - requires 1 GB GPU-RAM: http://pjreddie.com/media/files/yolov2-tiny-voc.weights
-- `yolo9000.cfg` (186 MB Yolo9000-model) - requires 4 GB GPU-RAM: http://pjreddie.com/media/files/yolo9000.weights
-
-</details>
 
 Put it near compiled: darknet.exe
 
@@ -269,28 +102,7 @@ You can get cfg-files by path: `darknet/cfg/`
 - **TensorFlow:** `pip install yolov4` YOLOv4 on TensorFlow 2.0 / TFlite / Android: https://github.com/hunglc007/tensorflow-yolov4-tflite
     Official TF models: https://github.com/tensorflow/models/tree/master/official/vision/beta/projects/yolo
     For YOLOv4 - convert `yolov4.weights`/`cfg` files to `yolov4.pb` by using [TNTWEN](https://github.com/TNTWEN/OpenVINO-YOLOV4) project, and to `yolov4.tflite` [TensorFlow-lite](https://www.tensorflow.org/lite/guide/get_started#2_convert_the_model_format)
-- **OpenCV** the fastest implementation of YOLOv4 for CPU (x86/ARM-Android), OpenCV can be compiled with [OpenVINO-backend](https://github.com/opencv/opencv/wiki/Intel's-Deep-Learning-Inference-Engine-backend) for running on (Myriad X / USB Neural Compute Stick / Arria FPGA), use `yolov4.weights`/`cfg` with: [C++ example](https://github.com/opencv/opencv/blob/8c25a8eb7b10fb50cda323ee6bec68aa1a9ce43c/samples/dnn/object_detection.cpp#L192-L221) or [Python example](https://github.com/opencv/opencv/blob/8c25a8eb7b10fb50cda323ee6bec68aa1a9ce43c/samples/dnn/object_detection.py#L129-L150)
-- **Intel OpenVINO 2021.2:** supports YOLOv4 (NPU Myriad X / USB Neural Compute Stick / Arria FPGA): https://devmesh.intel.com/projects/openvino-yolov4-49c756 read this [manual](https://github.com/TNTWEN/OpenVINO-YOLOV4) (old [manual](https://software.intel.com/en-us/articles/OpenVINO-Using-TensorFlow#converting-a-darknet-yolo-model) ) (for [Scaled-YOLOv4](https://github.com/WongKinYiu/ScaledYOLOv4/tree/yolov4-large) models use https://github.com/Chen-MingChang/pytorch_YOLO_OpenVINO_demo )
-- **PyTorch > ONNX**:
-  - [WongKinYiu/PyTorch_YOLOv4](https://github.com/WongKinYiu/PyTorch_YOLOv4)
-  - [maudzung/3D-YOLOv4](https://github.com/maudzung/Complex-YOLOv4-Pytorch)
-  - [Tianxiaomo/pytorch-YOLOv4](https://github.com/Tianxiaomo/pytorch-YOLOv4)
-  - [YOLOv5](https://github.com/ultralytics/yolov5)
-- **ONNX** on Jetson for YOLOv4: https://developer.nvidia.com/blog/announcing-onnx-runtime-for-jetson/ and https://github.com/ttanzhiqiang/onnx_tensorrt_project
-- **nVidia Transfer Learning Toolkit (TLT>=3.0)** Training and Detection https://docs.nvidia.com/metropolis/TLT/tlt-user-guide/text/object_detection/yolo_v4.html
-- **TensorRT+tkDNN**: https://github.com/ceccocats/tkDNN#fps-results
-- **Deepstream 5.0 / TensorRT for YOLOv4** https://github.com/NVIDIA-AI-IOT/yolov4_deepstream or https://github.com/marcoslucianops/DeepStream-Yolo read [Yolo is natively supported in DeepStream 4.0](https://news.developer.nvidia.com/deepstream-sdk-4-now-available/) and [PDF](https://docs.nvidia.com/metropolis/deepstream/Custom_YOLO_Model_in_the_DeepStream_YOLO_App.pdf). Additionally [jkjung-avt/tensorrt_demos](https://github.com/jkjung-avt/tensorrt_demos) or [wang-xinyu/tensorrtx](https://github.com/wang-xinyu/tensorrtx)
-- **Triton Inference Server / TensorRT** https://github.com/isarsoft/yolov4-triton-tensorrt
-- **DirectML** https://github.com/microsoft/DirectML/tree/master/Samples/yolov4
-- **OpenCL** (Intel, AMD, Mali GPUs for macOS & GNU/Linux) https://github.com/sowson/darknet
-- **HIP** for Training and Detection on AMD GPU https://github.com/os-hackathon/darknet
-- **ROS** (Robot Operating System) https://github.com/engcang/ros-yolo-sort
-- **Xilinx Zynq Ultrascale+ Deep Learning Processor (DPU) ZCU102/ZCU104:** https://github.com/Xilinx/Vitis-In-Depth-Tutorial/tree/master/Machine_Learning/Design_Tutorials/07-yolov4-tutorial
-- **Amazon Neurochip / Amazon EC2 Inf1 instances** 1.85 times higher throughput and 37% lower cost per image for TensorFlow based YOLOv4 model, using Keras [URL](https://aws.amazon.com/ru/blogs/machine-learning/improving-performance-for-deep-learning-based-object-detection-with-an-aws-neuron-compiled-yolov4-model-on-aws-inferentia/)
-- **TVM** - compilation of deep learning models (Keras, MXNet, PyTorch, Tensorflow, CoreML, DarkNet) into minimum deployable modules on diverse hardware backend (CPUs, GPUs, FPGA, and specialized accelerators): https://tvm.ai/about
-- **Tencent/ncnn:** the fastest inference of YOLOv4 on mobile phone CPU: https://github.com/Tencent/ncnn
-- **OpenDataCam** - It detects, tracks and counts moving objects by using YOLOv4: https://github.com/opendatacam/opendatacam#-hardware-pre-requisite
-- **Netron** - Visualizer for neural networks: https://github.com/lutzroeder/netron
+- **剩余略** 
 
 #### Datasets
 
@@ -306,25 +118,7 @@ You can get cfg-files by path: `darknet/cfg/`
 - developed State-of-the-Art object detector YOLOv4
 - added State-of-Art models: CSP, PRN, EfficientNet
 - added layers: [conv_lstm], [scale_channels] SE/ASFF/BiFPN, [local_avgpool], [sam], [Gaussian_yolo], [reorg3d] (fixed [reorg]), fixed [batchnorm]
-- added the ability for training recurrent models (with layers conv-lstm`[conv_lstm]`/conv-rnn`[crnn]`) for accurate detection on video
-- added data augmentation: `[net] mixup=1 cutmix=1 mosaic=1 blur=1`. Added activations: SWISH, MISH, NORM_CHAN, NORM_CHAN_SOFTMAX
-- added the ability for training with GPU-processing using CPU-RAM to increase the mini_batch_size and increase accuracy (instead of batch-norm sync)
-- improved binary neural network performance **2x-4x times** for Detection on CPU and GPU if you trained your own weights by using this XNOR-net model (bit-1 inference) : https://github.com/AlexeyAB/darknet/blob/master/cfg/yolov3-tiny_xnor.cfg
-- improved neural network performance **~7%** by fusing 2 layers into 1: Convolutional + Batch-norm
-- improved performance: Detection **2x times**, on GPU Volta/Turing (Tesla V100, GeForce RTX, ...) using Tensor Cores if `CUDNN_HALF` defined in the `Makefile` or `darknet.sln`
-- improved performance **~1.2x** times on FullHD, **~2x** times on 4K, for detection on the video (file/stream) using `darknet detector demo`...
-- improved performance **3.5 X times** of data augmentation for training (using OpenCV SSE/AVX functions instead of hand-written functions) - removes bottleneck for training on multi-GPU or GPU Volta
-- improved performance of detection and training on Intel CPU with AVX (Yolo v3 **~85%**)
-- optimized memory allocation during network resizing when `random=1`
-- optimized GPU initialization for detection - we use batch=1 initially instead of re-init with batch=1
-- added correct calculation of **mAP, F1, IoU, Precision-Recall** using command `darknet detector map`...
-- added drawing of chart of average-Loss and accuracy-mAP (`-map` flag) during training
-- run `./darknet detector demo ... -json_port 8070 -mjpeg_port 8090` as JSON and MJPEG server to get results online over the network by using your soft or Web-browser
-- added calculation of anchors for training
-- added example of Detection and Tracking objects: https://github.com/AlexeyAB/darknet/blob/master/src/yolo_console_dll.cpp
-- run-time tips and warnings if you use incorrect cfg-file or dataset
-- added support for Windows
-- many other fixes of code...
+- 略
 
 And added manual - [How to train Yolo v4-v2 (to detect your custom objects)](#how-to-train-to-detect-your-custom-objects)
 
@@ -362,18 +156,6 @@ If you customize build with CMake GUI, darknet executable will be installed in y
 - To check accuracy mAP@IoU=50: `./darknet detector map data/obj.data yolo-obj.cfg backup\yolo-obj_7000.weights`
 - To check accuracy mAP@IoU=75: `./darknet detector map data/obj.data yolo-obj.cfg backup\yolo-obj_7000.weights -iou_thresh 0.75`
 
-##### For using network video-camera mjpeg-stream with any Android smartphone
-
-1. Download for Android phone mjpeg-stream soft: IP Webcam / Smart WebCam
-
-    - Smart WebCam - preferably: https://play.google.com/store/apps/details?id=com.acontech.android.SmartWebCam2
-    - IP Webcam: https://play.google.com/store/apps/details?id=com.pas.webcam
-
-2. Connect your Android phone to computer by WiFi (through a WiFi-router) or USB
-3. Start Smart WebCam on your phone
-4. Replace the address below, on shown in the phone application (Smart WebCam) and launch:
-
-- Yolo v4 COCO-model: `./darknet detector demo data/coco.data yolov4.cfg yolov4.weights http://192.168.0.80:8080/video?dummy=param.mjpg -i 0`
 
 ### How to compile on Linux/macOS (using `CMake`)
 
@@ -427,44 +209,6 @@ Before make, you can set such options in the `Makefile`: [link](https://github.c
     `LD_LIBRARY_PATH=./:$LD_LIBRARY_PATH ./uselib data/coco.names cfg/yolov4.cfg yolov4.weights zed_camera`
 - You also need to specify for which graphics card the code is generated. This is done by setting `ARCH=`. If you use a never version than CUDA 11 you further need to edit line 20 from Makefile and remove `-gencode arch=compute_30,code=sm_30 \` as Kepler GPU support was dropped in CUDA 11. You can also drop the general `ARCH=` and just uncomment `ARCH=` for your graphics card.
 
-### How to compile on Windows (using `CMake`)
-
-Requires:
-
-- MSVC: https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community
-- CMake GUI: `Windows win64-x64 Installer`https://cmake.org/download/
-- Download Darknet zip-archive with the latest commit and uncompress it: [master.zip](https://github.com/AlexeyAB/darknet/archive/master.zip)
-
-In Windows:
-
-- Start (button) -> All programs -> CMake -> CMake (gui) ->
-
-- [look at image](https://habrastorage.org/webt/pz/s1/uu/pzs1uu4heb7vflfcjqn-lxy-aqu.jpeg) In CMake: Enter input path to the darknet Source, and output path to the Binaries -> Configure (button) -> Optional platform for generator: `x64`  -> Finish -> Generate -> Open Project ->
-
-- in MS Visual Studio: Select: x64 and Release -> Build -> Build solution
-
-- find the executable file `darknet.exe` in the output path to the binaries you specified
-
-![x64 and Release](https://habrastorage.org/webt/ay/ty/f-/aytyf-8bufe7q-16yoecommlwys.jpeg)
-
-### How to compile on Windows (using `vcpkg`)
-
-This is the recommended approach to build Darknet on Windows.
-
-1. Install Visual Studio 2017 or 2019. In case you need to download it, please go here: [Visual Studio Community](http://visualstudio.com). Remember to install English language pack, this is mandatory for vcpkg!
-
-2. Install CUDA enabling VS Integration during installation.
-
-3. Open Powershell (Start -> All programs -> Windows Powershell) and type these commands:
-
-```PowerShell
-Set-ExecutionPolicy unrestricted -Scope CurrentUser -Force
-git clone https://github.com/AlexeyAB/darknet
-cd darknet
-.\build.ps1 -UseVCPKG -EnableOPENCV -EnableCUDA -EnableCUDNN
-```
-
-(add option `-EnableOPENCV_CUDA` if you want to build OpenCV with CUDA support - very slow to build! - or remove options like `-EnableCUDA` or `-EnableCUDNN` if you are not interested in them). If you open the `build.ps1` script at the beginning you will find all available switches.
 
 ## How to train with multi-GPU
 
@@ -817,28 +561,4 @@ public:
         std::shared_ptr<image_t> mat_to_image_resize(cv::Mat mat) const;
 #endif
 };
-```
-
-## Citation
-
-```
-@misc{bochkovskiy2020yolov4,
-      title={YOLOv4: Optimal Speed and Accuracy of Object Detection}, 
-      author={Alexey Bochkovskiy and Chien-Yao Wang and Hong-Yuan Mark Liao},
-      year={2020},
-      eprint={2004.10934},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
-```
-
-```
-@InProceedings{Wang_2021_CVPR,
-    author    = {Wang, Chien-Yao and Bochkovskiy, Alexey and Liao, Hong-Yuan Mark},
-    title     = {{Scaled-YOLOv4}: Scaling Cross Stage Partial Network},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month     = {June},
-    year      = {2021},
-    pages     = {13029-13038}
-}
 ```
