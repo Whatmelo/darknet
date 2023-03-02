@@ -19,7 +19,7 @@
 
 
 ```diff
-+ 怎么replace the paths with yours：进入包含该txt文件夹下，执行for i in *yourname.txt; do sed -i "s@/home/fmc/data/@/home/user/data/images/@g" $i; done
++ 怎么replace the paths with yours：进入包含该txt文件夹下，终端执行for i in *yourname.txt; do sed -i "s@/home/fmc/data/@/home/user/data/images/@g" $i; done
 
 + /home/fmc/data/PACS/kfold/art_painting/dog/pic_001.jpg-->/home/user/data/images/PACS/kfold/art_painting/dog/pic_001.jpg
 ```
@@ -37,8 +37,12 @@ eval=coco
 ```
 5. Create `/results/` folder near with `./darknet` executable file
 6. Run validation: `./darknet detector valid cfg/coco.data cfg/yolov4.cfg yolov4.weights`
-7. Rename the file  `/results/coco_results.json` to `detections_test-dev2017_yolov4_results.json` and compress it to `detections_test-dev2017_yolov4_results.zip`
+7. Rename the file  `/results/coco_results.json` to `detections_test-dev2017_yolov4_results.json` and compress`(压缩)` it to `detections_test-dev2017_yolov4_results.zip`
 8. Submit file `detections_test-dev2017_yolov4_results.zip` to the MS COCO evaluation server for the `test-dev2019 (bbox)`
+
+```diff
++ COCO的评估代码：https://github.com/cocodataset/cocoapi
+```
 
 #### How to evaluate FPS of YOLOv4 on GPU
 
