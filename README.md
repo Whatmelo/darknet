@@ -17,8 +17,8 @@
 1. Download and unzip test-dev2017 dataset from MS COCO server: http://images.cocodataset.org/zips/test2017.zip
 2. Download list of images for Detection tasks and replace the paths with yours: https://raw.githubusercontent.com/AlexeyAB/darknet/master/scripts/testdev2017.txt
 
-`怎么replace the paths with yours：进入包含该txt文件夹下，执行`
-`for i in *yourname.txt; do sed -i "s@/home/fmc/data/@/home/user/data/images/@g" $i; done`
+`怎么replace the paths with yours：进入包含该txt文件夹下，执行for i in *yourname.txt; do sed -i "s@/home/fmc/data/@/home/user/data/images/@g" $i; done`
+
 `/home/fmc/data/PACS/kfold/art_painting/dog/pic_001.jpg-->/home/user/data/images/PACS/kfold/art_painting/dog/pic_001.jpg`
 
 3. Download `yolov4.weights` file 245 MB: [yolov4.weights](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.weights) (Google-drive mirror [yolov4.weights](https://drive.google.com/open?id=1cewMfusmPjYWbrnuJRuKhPMwRe_b9PaT) )
