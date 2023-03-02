@@ -32,8 +32,9 @@ names = data/coco.names
 backup = backup
 eval=coco
 ```
-
+```diff
 5. Create `/results/` folder near with `./darknet` executable file
+```
 6. Run validation: `./darknet detector valid cfg/coco.data cfg/yolov4.cfg yolov4.weights`
 7. Rename the file  `/results/coco_results.json` to `detections_test-dev2017_yolov4_results.json` and compress it to `detections_test-dev2017_yolov4_results.zip`
 8. Submit file `detections_test-dev2017_yolov4_results.zip` to the MS COCO evaluation server for the `test-dev2019 (bbox)`
